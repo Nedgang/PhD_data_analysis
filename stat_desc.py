@@ -61,7 +61,7 @@ def main(args):
 
     result_df = pd.DataFrame.from_dict(result, orient="index")
 
-    result_df.index.names = ["ID_Pere"]
+    result_df.index.names = ["ID_father"]
     result_df.index = result_df.index.astype(int)
 
     result_df.columns = ["Descendants_number"]
