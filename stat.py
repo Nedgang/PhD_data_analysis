@@ -32,5 +32,5 @@ def main(args):
 # LAUNCH #
 ##########
 if __name__ == "__main__":
-    arguments = docopt(__doc__, version="0.1")
+    arguments = docopt(__doc__, version="1.0.0")
     main(arguments)
