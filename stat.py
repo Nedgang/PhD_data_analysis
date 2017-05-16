@@ -21,8 +21,8 @@ from docopt import docopt
 # MAIN #
 ########
 def main(args):
-    data = pd.read_csv(args["<data.csv>"]).groupby("Lot")
-    data.describe().to_csv("stats_"+args["<data.csv>"])
+    data = pd.read_csv(args['<data.csv>']).groupby('Lot')
+    data.describe().to_csv('stats_' + args['<data.csv>'])
 
 #############
 # FUNCTIONS #
@@ -31,6 +31,6 @@ def main(args):
 ##########
 # LAUNCH #
 ##########
-if __name__ == "__main__":
-    arguments = docopt(__doc__, version="1.0.0")
+if __name__ == '__main__':
+    arguments = docopt(__doc__, version='1.0.0')
     main(arguments)
