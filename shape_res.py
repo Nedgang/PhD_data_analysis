@@ -45,7 +45,7 @@ def res_shape_drawing(args):
     # Draw the graphs
     for res in residuts:
         print("Drawing the " + res + " graph")
-        dt[res].plot(kind='hist')
+        dt[res].plot(kind='hist', bins=60)
         # Hide Y axis
         # frame = plt.gca()
         # frame.axes.get_yaxis().set_visible(False)
